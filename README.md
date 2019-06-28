@@ -1,7 +1,6 @@
 # RxJS Loading handler operator
 
 Sets isLoading variable to true on subscription and to false on completion.
-You can then show a loading indicator 
 
 ### Without handleLoading pipeable operator 😒:
 ```ts

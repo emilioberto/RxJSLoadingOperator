@@ -1,0 +1,15 @@
+{
+  "name": "rxjs-handle-loading-operator",
+  "version": "1.0.0",
+  "description": "Rxjs pipeable operator that handles loading",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --env=node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "rxjs": "^6.5.2"
+  }
+}

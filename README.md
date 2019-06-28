@@ -27,11 +27,11 @@ this.service.getData()
 ## Angular2 Usage example 
 ```ts
 @Component({
-  selector: 'app-example',
-  templateUrl: './example.component.html',
-  styleUrls: ['./example.component.scss']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
-export class ExampleComponent extends BaseComponent implements OnInit {
+export class AppComponent extends BaseComponent implements OnInit {
 
   public constructor(private service: ExampleService) { }
 
@@ -51,7 +51,7 @@ export class ExampleComponent extends BaseComponent implements OnInit {
 <div class="container">
   <lib-load-indicator *ngIf="isLoading; else myAmazingComponent"></lib-load-indicator>
   <ng-template #myAmazingComponent>
-    <app-example></app-example>
+    Hello
   </ng-template>
 </div>
 

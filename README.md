@@ -49,8 +49,8 @@ export class AppComponent extends BaseComponent implements OnInit {
 
 ```html
 <div class="container">
-  <lib-load-indicator *ngIf="isLoading; else myAmazingComponent"></lib-load-indicator>
-  <ng-template #myAmazingComponent>
+  <lib-load-indicator *ngIf="isLoading; else myAmazingContent"></lib-load-indicator>
+  <ng-template #myAmazingContent>
     Hello
   </ng-template>
 </div>

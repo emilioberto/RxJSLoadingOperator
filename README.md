@@ -3,8 +3,28 @@
 Sets isLoading variable to true on subscription and to false on completion.
 You can then show a loading indicator 
 
-## Usage example for Angular2
+### Without handleLoading pipeable operator 😒:
+```ts
+this.isLoading = true;
+this.service.getData()
+  .pipe(finalize(() => this.isLoading = false))
+  .subscribe(
+    res => {},
+    err => {}
+  );
+```
 
+### With handleLoading pipeable operator 🎉:
+```ts
+this.service.getData()
+  .pipe(handleLoading(this))
+  .subscribe(
+    res => {},
+    err => {}
+  );
+```
+
+## Angular2 Usage example 
 ```ts
 @Component({
   selector: 'app-example',

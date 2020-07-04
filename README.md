@@ -1,4 +1,4 @@
-# RxJS Loading handler operator
+# ⌛ RxJS Loading handler operator ⌛
 
 Sets isLoading variable to true on subscription and to false on completion.
 
